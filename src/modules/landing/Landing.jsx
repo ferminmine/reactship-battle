@@ -1,7 +1,14 @@
 import React from 'react';
-import ShipPlacement from '../ship/ShipPlacement';
+import { connect } from 'react-redux';
+import { compose, bindActionCreators } from 'redux';
+import { setGameState } from '../game/GameActions';
+import { setPlayerName } from '../player/PlayerActions';
+import GAME_STATES from '../game/GameStates';
+import { nextShipToPlaceSelector } from '../ship/ShipSelectors';
+import ShipPlacement from '../ship/ShipPlacement/ShipPlacement';
 import withStyles from 'react-jss';
-import ShipToPlace from '../ship/ShipToPlace';
+import ShipToPlace from '../ship/ShipPlacement/ShipToPlace';
+import PropTypes from 'prop-types';
 
 const styles = {
   shipPlacementContainer: {
@@ -32,13 +39,47 @@ const styles = {
     fontWeight: '800',
     padding: '10px',
     borderRadius: '6px',
-    fontSize: '1.1em'
+    fontSize: '1.1em',
+    cursor: 'pointer'
+  },
+  disabledButton: {
+    backgroundColor: '#b9b9b9',
+    pointerEvents: 'none'
   }
 };
 
 class Landing extends React.Component {
+  static propTypes = {
+    classes: PropTypes.object,
+    game: PropTypes.object.isRequired,
+    setGameState: PropTypes.func.isRequired,
+    setPlayerName: PropTypes.func.isRequired
+  };
+
+  startGame = () => {
+    if (this.props.game.state === GAME_STATES.PLAYER_READY) {
+      this.props.history.push('/play');
+    }
+  };
+
+  onChangeName = event => {
+    console.log(event.target.value);
+    this.props.setPlayerName(event.target.value);
+  };
+
+  componentDidUpdate = () => {
+    if (
+      this.props.player !== '' &&
+      this.props.nextShipToPlace === undefined &&
+      this.props.game.state !== GAME_STATES.PLAYER_READY
+    ) {
+      this.props.setGameState(GAME_STATES.PLAYER_READY);
+    }
+  };
+
   render = () => {
-    const { classes } = this.props;
+    const { classes, game } = this.props;
+    const buttonState = game.state === GAME_STATES.PLAYER_STARTING ? 'disabledButton' : ''
     return (
       <div className={classes.shipPlacementContainer}>
         <ShipPlacement />
@@ -48,12 +89,37 @@ class Landing extends React.Component {
             type="text"
             className={classes.nameInput}
             onChange={this.onChangeName}
-            placeHolder="Enter Your Name"
+            placeholder="Enter Your Name"
           />
-          <button className={classes.startButton}> START GAME </button>
+          <button className={`${classes.startButton} ${classes[buttonState]}`} onClick={this.startGame}>
+            {' '}
+            START GAME{' '}
+          </button>
         </div>
       </div>
     );
   };
 }
-export default withStyles(styles)(Landing);
+
+const mapStateToProps = state => ({
+  game: state.game,
+  player: state.player,
+  nextShipToPlace: nextShipToPlaceSelector(state)
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      setGameState,
+      setPlayerName
+    },
+    dispatch
+  );
+
+export default compose(
+  withStyles(styles),
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
+)(Landing);
