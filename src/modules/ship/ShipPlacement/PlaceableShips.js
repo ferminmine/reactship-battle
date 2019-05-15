@@ -2,17 +2,17 @@ const AVAILABLE_SHIPS = {
   submarine: {
     name: 'Submarine',
     size: 2,
-    image: ''
+    image: '/imgs/submarine.png'
   },
   battleShip: {
     name: 'Battleship',
     size: 3,
-    image: ''
+    image: '/imgs/battleship.png'
   },
   cruiser: {
     name: 'Cruiser',
     size: 4,
-    image: ''
+    image: '/imgs/cruiser.png'
   }
 };
 
