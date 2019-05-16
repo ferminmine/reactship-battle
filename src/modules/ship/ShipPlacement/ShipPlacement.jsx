@@ -7,8 +7,8 @@ import { removeShipToPlace } from './ShipsToPlaceActions';
 import withStyles from 'react-jss';
 import PropTypes from 'prop-types';
 import { nextShipToPlaceSelector } from '../ShipSelectors';
-import positionValidator from '../../../utils/PositionValidator';
-import shipCollapseValidator from '../../../utils/ShipCollapseValidator';
+import positionValidator from '../../../utils/positioning/PositionValidator';
+import shipCollapseValidator from '../../../utils/positioning/ShipCollapseValidator';
 import { placeCPUShips } from '../../../utils/CPUBehavior';
 
 const styles = {
@@ -50,7 +50,8 @@ class ShipPlacement extends React.Component {
         ...nextShipToPlace,
         position: { column, row },
         orientation,
-        currentLife: 4
+        currentLife: 4,
+        id: Date.now()
       };
       if (!shipCollapseValidator(shipToCreate, this.props.playerShips)) {
         this.props.addShip(shipToCreate, 'HUMAN');
