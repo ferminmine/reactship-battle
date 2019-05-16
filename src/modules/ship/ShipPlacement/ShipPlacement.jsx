@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import { nextShipToPlaceSelector } from '../ShipSelectors';
 import positionValidator from '../../../utils/PositionValidator';
 import shipCollapseValidator from '../../../utils/ShipCollapseValidator';
+import { placeCPUShips } from '../../../utils/CPUBehavior';
 
 const styles = {
     buttonContainer: {
@@ -63,7 +64,7 @@ class ShipPlacement extends React.Component {
   };
 
   componentDidMount = () => {
-    document.addEventListener('keydown', this.changeOrientation, false);
+    placeCPUShips([ ...this.props.totalShipsToPlace], this.props.addShip)
   };
 
   render = () => {
@@ -86,7 +87,9 @@ class ShipPlacement extends React.Component {
 const mapStateToProps = state => ({
   orientation: state.ships.orientationToPlace,
   nextShipToPlace: nextShipToPlaceSelector(state),
-  playerShips: state.ships.playerShips
+  playerShips: state.ships.playerShips,
+  cpuShips: state.ships.cpuShips,
+  totalShipsToPlace: state.ships.shipsToPlace
 });
 
 const mapDispatchToProps = dispatch =>
