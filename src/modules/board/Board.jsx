@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import styles from './BoardStyles';
 import PropTypes from 'prop-types';
-import positionValidator from '../../utils/PositionValidator';
-import pointHasAShip from '../../utils/PointHasAShip';
+import positionValidator from '../../utils/positioning/PositionValidator';
+import pointHasAShip from '../../utils/positioning/PointHasAShip';
 
 class Board extends React.Component {
   static propTypes = {

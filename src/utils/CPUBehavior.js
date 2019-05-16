@@ -1,5 +1,5 @@
-import shipCollapseValidator from './ShipCollapseValidator';
-import positionValidator from './PositionValidator';
+import shipCollapseValidator from './positioning/ShipCollapseValidator';
+import positionValidator from './positioning/PositionValidator';
 
 const ORIENTATIONS = ['horizontal', 'vertical'];
 
@@ -18,7 +18,8 @@ export const placeCPUShips = (shipsToPlace, addShip) => {
       ...shipsToPlace[0],
       position,
       orientation,
-      currentLife: 4
+      currentLife: shipsToPlace[0].size,
+      id: shipsToPlace.length
     };
     if (
       !shipCollapseValidator(shipToCreate, shipsAdded) &&
