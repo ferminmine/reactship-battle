@@ -21,9 +21,7 @@ class Board extends React.Component {
       .map(() => Array(10).fill('normal'))
   };
 
-  itHasAShip = (column, row) => {
-    return pointHasAShip(column, row, this.props.ships);
-  };
+  itHasAShip = (column, row) => pointHasAShip(column, row, this.props.ships);
 
   mouseEntered = ({ column, row }) => {
     // Chunk of code to validate and paint where the ship will be placed in the board
@@ -62,13 +60,16 @@ class Board extends React.Component {
   };
 
   render = () => {
-    const { classes } = this.props;
+    const { classes, type } = this.props;
     const { board } = this.state;
     return (
       <div className={classes.boardContainer}>
         {board.map((row, column) =>
           row.map((land, row) => {
-            const itHasAShip = this.itHasAShip(column, row) ? 'shipInWater' : '';
+            const itHasAShip =
+              (type === 'defensive' || type === 'shipPlacer') && this.itHasAShip(column, row)
+                ? 'shipInWater'
+                : '';
             return (
               <div
                 className={`${classes.land} ${classes[land]} ${classes[itHasAShip]}`}

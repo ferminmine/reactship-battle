@@ -63,7 +63,6 @@ class Landing extends React.Component {
   };
 
   onChangeName = event => {
-    console.log(event.target.value);
     this.props.setPlayerName(event.target.value);
   };
 
