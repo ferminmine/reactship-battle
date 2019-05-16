@@ -3,7 +3,6 @@ export default {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
     gridTemplateRows: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
-    width: '25%',
     border: '2px solid #899695'
   },
   land: {

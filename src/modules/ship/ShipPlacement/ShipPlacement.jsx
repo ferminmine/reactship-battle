@@ -27,6 +27,9 @@ const styles = {
         cursor: 'pointer',
         marginRight: '22%',
         textAlign: 'center'
+    },
+    boardOutsideContainer: {
+      width: '25%',
     }
 }
 
@@ -74,12 +77,14 @@ class ShipPlacement extends React.Component {
           <div className={classes.buttonContainer}>
             <div className={classes.rotateButton} onClick={this.changeOrientation}> ROTATE SHIP </div>
           </div>
-          <Board
-            type={'shipPlacer'}
-            actionToPerform={this.placeShip}
-            nextShipToPlace={this.props.nextShipToPlace}
-            ships={this.props.playerShips}
-          />
+          <div className={classes.boardOutsideContainer}>
+            <Board
+              type={'shipPlacer'}
+              actionToPerform={this.placeShip}
+              nextShipToPlace={this.props.nextShipToPlace}
+              ships={this.props.playerShips}
+            />
+          </div>
       </React.Fragment>)
   };
 }
