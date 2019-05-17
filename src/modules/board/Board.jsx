@@ -6,6 +6,8 @@ import styles from './BoardStyles';
 import PropTypes from 'prop-types';
 import positionValidator from '../../utils/positioning/PositionValidator';
 import pointHasAShip from '../../utils/positioning/PointHasAShip';
+import { shootExists } from '../../utils/Shooting';
+import { checkIfPointIsInShip } from '../../utils/positioning/PointHasAShip';
 
 class Board extends React.Component {
   static propTypes = {
@@ -60,19 +62,37 @@ class Board extends React.Component {
   };
 
   render = () => {
-    const { classes, type } = this.props;
+    const { classes, type, ships, shoots } = this.props;
     const { board } = this.state;
     return (
       <div className={classes.boardContainer}>
         {board.map((row, column) =>
           row.map((land, row) => {
+            // Chunk of check for different states of the land. 
             const itHasAShip =
-              (type === 'defensive' || type === 'shipPlacer') && this.itHasAShip(column, row)
+              (type === 'shipPlacer' || type === 'defensive') && this.itHasAShip(column, row)
                 ? 'shipInWater'
                 : '';
+            const blankShoot =
+              type !== 'shipPlacer' && shootExists({ column, row }, shoots)
+                ? 'blankShoot'
+                : '';
+            const hittedShoot =
+              type !== 'shipPlacer' &&
+              shootExists({ column, row }, shoots) &&
+              ships.find(ship => checkIfPointIsInShip(column, row, ship))
+                ? 'hittedShoot'
+                : '';
+            let ship = undefined;
+            if (hittedShoot !== '') {
+              ship = ships.find(ship => checkIfPointIsInShip(column, row, ship));
+            }
+            const sunkenShip = ship && ship.currentLife === 0 ? 'sunkenShip' : '';
             return (
               <div
-                className={`${classes.land} ${classes[land]} ${classes[itHasAShip]}`}
+                className={`${classes.land} ${classes[land]} ${classes[itHasAShip]} ${
+                  classes[blankShoot]
+                } ${classes[hittedShoot]} ${classes[sunkenShip]}`}
                 key={`${column} ${row}`}
                 onMouseEnter={() => this.mouseEntered({ column, row })}
                 onMouseLeave={() => this.mouseLeft({ column, row })}

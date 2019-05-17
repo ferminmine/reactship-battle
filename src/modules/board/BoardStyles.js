@@ -18,5 +18,17 @@ export default {
   shipInWater: {
     backgroundColor: '#899695',
     transition: '0.2s all'
+  },
+  blankShoot: {
+    backgroundColor: '#52cddc',
+    transition: '0.2s all'
+  },
+  hittedShoot: {
+    backgroundColor: '#ff9c40',
+    transition: '0.2s all'
+  },
+  sunkenShip: {
+    backgroundColor: '#ff3826',
+    transition: '0.2s all'
   }
 };
