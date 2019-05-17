@@ -50,7 +50,7 @@ class ShipPlacement extends React.Component {
         ...nextShipToPlace,
         position: { column, row },
         orientation,
-        currentLife: 4,
+        currentLife: nextShipToPlace.size,
         id: Date.now()
       };
       if (!shipCollapseValidator(shipToCreate, this.props.playerShips)) {

@@ -30,5 +30,8 @@ export default {
   sunkenShip: {
     backgroundColor: '#ff3826',
     transition: '0.2s all'
+  },
+  crossHair: {
+    cursor:'url("/imgs/crosshair.png") 16 16, crosshair'
   }
 };
