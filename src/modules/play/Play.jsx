@@ -5,11 +5,13 @@ import withStyles from 'react-jss';
 import { setGameState } from '../game/GameActions';
 import { substractLifePointToShip } from '../ship/ShipsActions';
 import { addShoot } from '../shoots/ShootsActions';
+import { addKnownHit, removeKnownHit } from '../shoots/CPUKnownHitsActions';
 import GAME_STATES from '../game/GameStates';
 import PropTypes from 'prop-types';
 
 import Board from '../board/Board';
 import { shoot } from '../../utils/Shooting';
+import { shootPlayer } from '../../utils/CPUBehavior';
 
 const styles = {
   boardContainer: {
@@ -48,15 +50,37 @@ class Play extends React.Component {
   };
 
   shootToCPU = ({ column, row }) => {
+    const {
+      addShoot,
+      substractLifePointToShip,
+      playerShips,
+      playerShoots,
+      cpuShips,
+      cpuShoots,
+      addKnownHit,
+      removeKnownHit,
+      cpuKnownHits
+    } = this.props;
     shoot(
       { column, row },
-      this.props.playerShoots,
-      this.props.cpuShips,
+      playerShoots,
+      cpuShips,
       'HUMAN',
       'CPU',
-      this.props.addShoot,
-      this.props.substractLifePointToShip
+      addShoot,
+      substractLifePointToShip
     );
+    this.props.setGameState(GAME_STATES.CPU_PLAYING);
+    shootPlayer(
+      cpuKnownHits,
+      cpuShoots,
+      playerShips,
+      addShoot,
+      substractLifePointToShip,
+      addKnownHit,
+      removeKnownHit
+    );
+    this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
   };
 
   render = () => {
@@ -92,7 +116,8 @@ const mapStateToProps = state => ({
   playerShoots: state.shoots.playerShoots,
   cpuShoots: state.shoots.cpuShoots,
   player: state.player,
-  game: state.game
+  game: state.game,
+  cpuKnownHits: state.shoots.cpuKnownHits
 });
 
 const mapDispatchToProps = dispatch =>
@@ -100,7 +125,9 @@ const mapDispatchToProps = dispatch =>
     {
       setGameState,
       substractLifePointToShip,
-      addShoot
+      addShoot,
+      addKnownHit,
+      removeKnownHit
     },
     dispatch
   );

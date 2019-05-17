@@ -69,6 +69,7 @@ class Board extends React.Component {
         {board.map((row, column) =>
           row.map((land, row) => {
             // Chunk of check for different states of the land. 
+            const crossHair = type === 'offensive' ? 'crossHair' : '';
             const itHasAShip =
               (type === 'shipPlacer' || type === 'defensive') && this.itHasAShip(column, row)
                 ? 'shipInWater'
@@ -92,7 +93,7 @@ class Board extends React.Component {
               <div
                 className={`${classes.land} ${classes[land]} ${classes[itHasAShip]} ${
                   classes[blankShoot]
-                } ${classes[hittedShoot]} ${classes[sunkenShip]}`}
+                } ${classes[hittedShoot]} ${classes[sunkenShip]} ${classes[crossHair]}`}
                 key={`${column} ${row}`}
                 onMouseEnter={() => this.mouseEntered({ column, row })}
                 onMouseLeave={() => this.mouseLeft({ column, row })}
