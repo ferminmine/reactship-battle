@@ -9,7 +9,7 @@ import GAME_STATES from '../game/GameStates';
 import PropTypes from 'prop-types';
 
 import Board from '../board/Board';
-import whichShipBelongToPoint from '../../utils/positioning/WhichShipBelongToPoint';
+import { shoot } from '../../utils/Shooting';
 
 const styles = {
   boardContainer: {
@@ -47,17 +47,16 @@ class Play extends React.Component {
     }
   };
 
-  shootIsNotRepeated = ({ column, row }, shoots) =>
-    shoots.some(shoot => shoot.column === column && shoot.row === row);
-
-  shoot = ({ column, row }) => {
-    if ((!this.shootIsNotRepeated({ column, row }), this.props.playerShoots)) {
-      let ship = whichShipBelongToPoint(column, row, this.props.cpuShips);
-      if (ship) {
-        this.props.substractLifePointToShip(ship.id, 'CPU');
-      }
-      this.props.addShoot({ column, row }, 'HUMAN');
-    }
+  shootToCPU = ({ column, row }) => {
+    shoot(
+      { column, row },
+      this.props.playerShoots,
+      this.props.cpuShips,
+      'HUMAN',
+      'CPU',
+      this.props.addShoot,
+      this.props.substractLifePointToShip
+    );
   };
 
   render = () => {
@@ -66,11 +65,21 @@ class Play extends React.Component {
       <div className={classes.boardContainer}>
         <div className={classes.playerBoardContainer}>
           <div className={classes.playerName}> {this.props.player} </div>
-          <Board type={'defensive'} actionToPerform={() => {}} ships={this.props.playerShips} />
+          <Board
+            type={'defensive'}
+            actionToPerform={() => {}}
+            ships={this.props.playerShips}
+            shoots={this.props.cpuShoots}
+          />
         </div>
         <div className={`${classes.playerBoardContainer} ${classes.cpuBoardContainer}`}>
           <div className={classes.playerName}> CPU </div>
-          <Board type={'defensive'} actionToPerform={this.shoot} ships={this.props.cpuShips} />
+          <Board
+            type={'offensive'}
+            actionToPerform={this.shootToCPU}
+            ships={this.props.cpuShips}
+            shoots={this.props.playerShoots}
+          />
         </div>
       </div>
     );
@@ -81,6 +90,7 @@ const mapStateToProps = state => ({
   playerShips: state.ships.playerShips,
   cpuShips: state.ships.cpuShips,
   playerShoots: state.shoots.playerShoots,
+  cpuShoots: state.shoots.cpuShoots,
   player: state.player,
   game: state.game
 });
