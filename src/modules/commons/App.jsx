@@ -7,11 +7,13 @@ import ViewsContainer from './ViewsContainer';
 import styles from './AppStyles';
 import './body.css';
 import store, { history } from '../../store/Store';
+import Header from './Header';
 
 const App = ({ classes }) => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div className={classes.appStyles}>
+        <Header />
         <ViewsContainer />
       </div>
     </ConnectedRouter>

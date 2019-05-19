@@ -15,6 +15,8 @@ import { shoot } from '../../utils/Shooting';
 import { shootPlayer } from '../../utils/CPUBehavior';
 import EndGame from '../game/EndGame';
 
+import PlayText from './PlayText';
+
 class Play extends React.Component {
   static propTypes = {
     playerShips: PropTypes.array,
@@ -92,6 +94,7 @@ class Play extends React.Component {
     const { classes, game, player } = this.props;
     return (
       <React.Fragment>
+      <PlayText />
       <div className={classes.boardContainer}>
         <div className={classes.playerBoardContainer}>
           <div className={classes.playerName}> {this.props.player} </div>

@@ -9,6 +9,7 @@ import ShipPlacement from '../ship/ShipPlacement/ShipPlacement';
 import withStyles from 'react-jss';
 import ShipToPlace from '../ship/ShipPlacement/ShipToPlace';
 import PropTypes from 'prop-types';
+import InstructionsText from './InstructionsText';
 
 const styles = {
   shipPlacementContainer: {
@@ -80,22 +81,25 @@ class Landing extends React.Component {
     const { classes, game } = this.props;
     const buttonState = game.state === GAME_STATES.PLAYER_STARTING ? 'disabledButton' : ''
     return (
-      <div className={classes.shipPlacementContainer}>
-        <ShipPlacement />
-        <div className={classes.optionsContainer}>
-          <ShipToPlace />
-          <input
-            type="text"
-            className={classes.nameInput}
-            onChange={this.onChangeName}
-            placeholder="Enter Your Name"
-          />
-          <button className={`${classes.startButton} ${classes[buttonState]}`} onClick={this.startGame}>
-            {' '}
-            START GAME{' '}
-          </button>
+      <React.Fragment>
+        <InstructionsText />
+        <div className={classes.shipPlacementContainer}>
+          <ShipPlacement />
+          <div className={classes.optionsContainer}>
+            <ShipToPlace />
+            <input
+              type="text"
+              className={classes.nameInput}
+              onChange={this.onChangeName}
+              placeholder="Enter Your Name"
+            />
+            <button className={`${classes.startButton} ${classes[buttonState]}`} onClick={this.startGame}>
+              {' '}
+              START GAME{' '}
+            </button>
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   };
 }
