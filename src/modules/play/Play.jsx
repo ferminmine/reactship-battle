@@ -42,7 +42,7 @@ class Play extends React.Component {
 
   surrender = () => {
     this.props.setGameState(GAME_STATES.PLAYER_SURRENDERED);
-  }
+  };
 
   defineWinner = winner => {
     this.props.setGameState(GAME_STATES.GAME_ENDED);
@@ -61,31 +61,34 @@ class Play extends React.Component {
       removeKnownHit,
       cpuKnownHits
     } = this.props;
-    shoot(
-      { column, row },
-      playerShoots,
-      cpuShips,
-      'HUMAN',
-      'CPU',
-      addShoot,
-      substractLifePointToShip
-    );
-    if (this.checkForWinner(playerShips, cpuShips) == 'player') {
-      this.defineWinner('player');
-    } else {
-      this.props.setGameState(GAME_STATES.CPU_PLAYING);
-      shootPlayer(
-        cpuKnownHits,
-        cpuShoots,
-        playerShips,
+    if (
+      shoot(
+        { column, row },
+        playerShoots,
+        cpuShips,
+        'HUMAN',
+        'CPU',
         addShoot,
-        substractLifePointToShip,
-        addKnownHit,
-        removeKnownHit
-      );
-      this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
-      if (this.checkForWinner(playerShips, cpuShips) == 'CPU') {
-        this.defineWinner('CPU');
+        substractLifePointToShip
+      )
+    ) {
+      if (this.checkForWinner(playerShips, cpuShips) == 'player') {
+        this.defineWinner('player');
+      } else {
+        this.props.setGameState(GAME_STATES.CPU_PLAYING);
+        shootPlayer(
+          cpuKnownHits,
+          cpuShoots,
+          playerShips,
+          addShoot,
+          substractLifePointToShip,
+          addKnownHit,
+          removeKnownHit
+        );
+        this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
+        if (this.checkForWinner(playerShips, cpuShips) == 'CPU') {
+          this.defineWinner('CPU');
+        }
       }
     }
   };
@@ -94,38 +97,44 @@ class Play extends React.Component {
     const { classes, game, player } = this.props;
     return (
       <React.Fragment>
-      <PlayText />
-      <div className={classes.boardContainer}>
-        <div className={classes.playerBoardContainer}>
-          <div className={classes.playerName}> {this.props.player} </div>
-          <Board
-            type={'defensive'}
-            actionToPerform={() => {}}
-            ships={this.props.playerShips}
-            shoots={this.props.cpuShoots}
-          />
+        <PlayText />
+        <div className={classes.boardContainer}>
+          <div className={classes.playerBoardContainer}>
+            <div className={classes.playerName}> {this.props.player} </div>
+            <Board
+              type={'defensive'}
+              actionToPerform={() => {}}
+              ships={this.props.playerShips}
+              shoots={this.props.cpuShoots}
+            />
+          </div>
+          <div className={`${classes.playerBoardContainer} ${classes.cpuBoardContainer}`}>
+            <div className={classes.playerName}> CPU </div>
+            <Board
+              type={'offensive'}
+              actionToPerform={this.shootToCPU}
+              ships={this.props.cpuShips}
+              shoots={this.props.playerShoots}
+            />
+          </div>
         </div>
-        <div className={`${classes.playerBoardContainer} ${classes.cpuBoardContainer}`}>
-          <div className={classes.playerName}> CPU </div>
-          <Board
-            type={'offensive'}
-            actionToPerform={this.shootToCPU}
-            ships={this.props.cpuShips}
-            shoots={this.props.playerShoots}
-          />
+        <div className={classes.turn}>
+          {(game.state === GAME_STATES.PLAYER_PLAYING ||
+            game.state === GAME_STATES.CPU_PLAYING) && (
+            <div>
+              {game.state === GAME_STATES.PLAYER_PLAYING && player}
+              {game.state === GAME_STATES.CPU_PLAYING && player} is playing!
+            </div>
+          )}
+          {(game.state === GAME_STATES.GAME_ENDED ||
+            game.state === GAME_STATES.PLAYER_SURRENDERED) && <EndGame />}
         </div>
-      </div>
-      <div className={classes.turn}>
-        { (game.state === GAME_STATES.PLAYER_PLAYING || game.state === GAME_STATES.CPU_PLAYING) &&
-        (<div>
-          {game.state === GAME_STATES.PLAYER_PLAYING && player}
-          {game.state === GAME_STATES.CPU_PLAYING && player} is playing!
-        </div>)}
-        {(game.state === GAME_STATES.GAME_ENDED || game.state === GAME_STATES.PLAYER_SURRENDERED) && <EndGame />}
-      </div>
-      <div className={classes.centeredButton}>
-        <button className={classes.surrenderButton} onClick={this.surrender}> SURRENDER </button>
-      </div>
+        <div className={classes.centeredButton}>
+          <button className={classes.surrenderButton} onClick={this.surrender}>
+            {' '}
+            SURRENDER{' '}
+          </button>
+        </div>
       </React.Fragment>
     );
   };
