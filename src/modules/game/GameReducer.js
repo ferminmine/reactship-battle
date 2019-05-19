@@ -10,6 +10,8 @@ export default (state = defaultState, action) => {
   switch (action.type) {
     case GAME_ACTION_TYPES.SET_GAME_STATE:
       return { ...state, state: action.payload };
+    case GAME_ACTION_TYPES.SET_WINNER:
+      return { ...state, winner: action.payload };
     default:
       return state;
   }

@@ -20,6 +20,7 @@ const placeableShips = [
   AVAILABLE_SHIPS.cruiser,
   AVAILABLE_SHIPS.battleShip,
   AVAILABLE_SHIPS.battleShip,
+  AVAILABLE_SHIPS.battleShip,
   AVAILABLE_SHIPS.submarine
 ];
 

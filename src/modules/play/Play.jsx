@@ -2,7 +2,8 @@ import React from 'react';
 import { bindActionCreators, compose } from 'redux';
 import { connect } from 'react-redux';
 import withStyles from 'react-jss';
-import { setGameState } from '../game/GameActions';
+import styles from './PlayStyles';
+import { setGameState, setWinner } from '../game/GameActions';
 import { substractLifePointToShip } from '../ship/ShipsActions';
 import { addShoot } from '../shoots/ShootsActions';
 import { addKnownHit, removeKnownHit } from '../shoots/CPUKnownHitsActions';
@@ -12,28 +13,7 @@ import PropTypes from 'prop-types';
 import Board from '../board/Board';
 import { shoot } from '../../utils/Shooting';
 import { shootPlayer } from '../../utils/CPUBehavior';
-
-const styles = {
-  boardContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '1em'
-  },
-  playerBoardContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '25%'
-  },
-  playerName: {
-    textAlign: 'left',
-    fontSize: '1.1em',
-    marginBottom: '0.5em',
-    color: '#8999b2'
-  },
-  cpuBoardContainer: {
-    marginLeft: '3%'
-  }
-};
+import EndGame from '../game/EndGame';
 
 class Play extends React.Component {
   static propTypes = {
@@ -42,11 +22,29 @@ class Play extends React.Component {
   };
 
   componentDidMount = () => {
+    console.log('mounting');
     if (this.props.game.state === GAME_STATES.PLAYER_READY) {
       this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
     } else {
       this.props.history.push('/');
     }
+  };
+
+  checkForWinner = (playerShips, cpuShips) => {
+    if (!playerShips.some(ship => ship.currentLife > 0)) {
+      return 'CPU';
+    } else if (!cpuShips.some(ship => ship.currentLife > 0)) {
+      return 'player';
+    }
+  };
+
+  surrender = () => {
+    this.props.setGameState(GAME_STATES.PLAYER_SURRENDERED);
+  }
+
+  defineWinner = winner => {
+    this.props.setGameState(GAME_STATES.GAME_ENDED);
+    this.props.setWinner(winner);
   };
 
   shootToCPU = ({ column, row }) => {
@@ -70,22 +68,30 @@ class Play extends React.Component {
       addShoot,
       substractLifePointToShip
     );
-    this.props.setGameState(GAME_STATES.CPU_PLAYING);
-    shootPlayer(
-      cpuKnownHits,
-      cpuShoots,
-      playerShips,
-      addShoot,
-      substractLifePointToShip,
-      addKnownHit,
-      removeKnownHit
-    );
-    this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
+    if (this.checkForWinner(playerShips, cpuShips) == 'player') {
+      this.defineWinner('player');
+    } else {
+      this.props.setGameState(GAME_STATES.CPU_PLAYING);
+      shootPlayer(
+        cpuKnownHits,
+        cpuShoots,
+        playerShips,
+        addShoot,
+        substractLifePointToShip,
+        addKnownHit,
+        removeKnownHit
+      );
+      this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
+      if (this.checkForWinner(playerShips, cpuShips) == 'CPU') {
+        this.defineWinner('CPU');
+      }
+    }
   };
 
   render = () => {
-    const { classes } = this.props;
+    const { classes, game, player } = this.props;
     return (
+      <React.Fragment>
       <div className={classes.boardContainer}>
         <div className={classes.playerBoardContainer}>
           <div className={classes.playerName}> {this.props.player} </div>
@@ -106,6 +112,18 @@ class Play extends React.Component {
           />
         </div>
       </div>
+      <div className={classes.turn}>
+        { (game.state === GAME_STATES.PLAYER_PLAYING || game.state === GAME_STATES.CPU_PLAYING) &&
+        (<div>
+          {game.state === GAME_STATES.PLAYER_PLAYING && player}
+          {game.state === GAME_STATES.CPU_PLAYING && player} is playing!
+        </div>)}
+        {(game.state === GAME_STATES.GAME_ENDED || game.state === GAME_STATES.PLAYER_SURRENDERED) && <EndGame />}
+      </div>
+      <div className={classes.centeredButton}>
+        <button className={classes.surrenderButton} onClick={this.surrender}> SURRENDER </button>
+      </div>
+      </React.Fragment>
     );
   };
 }
@@ -127,7 +145,8 @@ const mapDispatchToProps = dispatch =>
       substractLifePointToShip,
       addShoot,
       addKnownHit,
-      removeKnownHit
+      removeKnownHit,
+      setWinner
     },
     dispatch
   );
