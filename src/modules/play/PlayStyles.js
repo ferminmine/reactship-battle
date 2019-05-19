@@ -39,5 +39,21 @@ export default {
   centeredButton: {
     display: 'flex',
     justifyContent: 'center'
+  },
+  '@media (max-width: 650px)': {
+    boardContainer: {
+      flexDirection: 'column',
+      alignItems: 'center'
+    },
+    playerBoardContainer: {
+      width: '90%'
+    },
+    cpuBoardContainer: {
+      marginLeft: 0,
+      marginTop: '2em'
+    },
+    playerName: {
+      textAlign: 'center'
+    }
   }
 };

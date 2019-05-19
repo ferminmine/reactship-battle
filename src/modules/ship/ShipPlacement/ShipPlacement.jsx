@@ -10,28 +10,7 @@ import { nextShipToPlaceSelector } from '../ShipSelectors';
 import positionValidator from '../../../utils/positioning/PositionValidator';
 import shipCollapseValidator from '../../../utils/positioning/ShipCollapseValidator';
 import { placeCPUShips } from '../../../utils/CPUBehavior';
-
-const styles = {
-    buttonContainer: {
-        display: 'flex',
-        alignItems: 'center'
-    },
-    rotateButton: {
-        background: 'none',
-        border: '3px solid #2f9ad4',
-        color: '#2f9ad4',
-        fontWeight: '800',
-        padding: '4px',
-        borderRadius: '6px',
-        fontSize: '1.1em',
-        cursor: 'pointer',
-        marginRight: '22%',
-        textAlign: 'center'
-    },
-    boardOutsideContainer: {
-      width: '25%',
-    }
-}
+import styles from './ShipPlacementStyles';
 
 class ShipPlacement extends React.Component {
   static propTypes = {

@@ -7,8 +7,13 @@ const styles = {
     justifyContent: 'center'
   },
   headerImage: {
-      height: '13em',
-      width: '60%'
+    height: '13em',
+    width: '60%'
+  },
+  '@media (max-width: 650px)': {
+    headerImage: {
+      width: '100%'
+    }
   }
 };
 
@@ -17,7 +22,7 @@ class Header extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.headerContainer}>
-        <img src='/imgs/reactship.png' className={classes.headerImage} />
+        <img src="/imgs/reactship.png" className={classes.headerImage} />
       </div>
     );
   };

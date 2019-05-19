@@ -17,14 +17,20 @@ const styles = {
     fontWeight: 500,
     marginBottom: '0.3em',
     color: '#5288bb'
+  },
+  '@media (max-width: 650px)': {
+    instructionsContainer: {
+      marginLeft: '10%',
+      marginRight: '10%'
+    }
   }
 };
 
 const ParagraphWithTitle = ({ classes, title, paragraph }) => (
   <div className={classes.instructionsContainer}>
     <div className={classes.instructionsParagraph}>
-      <div className={classes.paragraphTitle}> { title } </div>
-        {paragraph}
+      <div className={classes.paragraphTitle}> {title} </div>
+      {paragraph}
     </div>
   </div>
 );
