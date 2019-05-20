@@ -68,7 +68,7 @@ class Board extends React.Component {
       <div className={classes.boardContainer}>
         {board.map((row, column) =>
           row.map((land, row) => {
-            // Chunk of check for different states of the land. 
+            // Chunk of checks for different states of the square. 
             const crossHair = type === 'offensive' ? 'crossHair' : '';
             const itHasAShip =
               (type === 'shipPlacer' || type === 'defensive') && this.itHasAShip(column, row)
