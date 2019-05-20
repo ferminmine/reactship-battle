@@ -3,6 +3,7 @@ import whichShipBelongToPoint from './positioning/WhichShipBelongToPoint';
 export const shootExists = ({ column, row }, shoots) =>
   shoots.some(shoot => shoot.column === column && shoot.row === row);
 
+// Main core logic to shoot, either as a player or as the CPU
 export const shoot = (
   { column, row },
   attackerShoots,
@@ -23,6 +24,7 @@ export const shoot = (
   return false;
 };
 
+// Obtain possible shoots for the CPU to aim given a known hit spot.
 export const obtainProximityShoots = ({ column, row }) => {
   const possibleShoots = [];
   if (column + 1 <= 9) {

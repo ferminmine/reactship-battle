@@ -7,8 +7,8 @@ const ORIENTATIONS = ['horizontal', 'vertical'];
 
 const getRandomArbitrary = (min, max) => parseInt(Math.random() * (max - min) + min);
 
+// CPU Logic to Placing ships. Basically any random position that it's valid will do.
 export const placeCPUShips = (shipsToPlace, addShip) => {
-  // addShip(shipsToPlace[0], 'CPU');
   const shipsAdded = [];
   while (shipsToPlace.length > 0) {
     const orientation = ORIENTATIONS[getRandomArbitrary(0, 2)];
@@ -48,6 +48,7 @@ const removeDestroyedShipsFromKnownHits = (knownHits, removeKnownHit, playerShip
   });
 };
 
+// Main Logic to the shooting and playing AI of the CPU. TODO: Refactor in the future in even more functions
 export const shootPlayer = (
   knownHits,
   cpuShoots,
