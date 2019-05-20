@@ -8,7 +8,11 @@ against you. Be warned though: it will not give you any mercy.`;
 const instructionsSecondParagraph = (
   <React.Fragment>
     If you have not played Battleship before, then you can read the rules{' '}
-    <a target="_blank" href="https://en.wikipedia.org/wiki/Battleship_(game)">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://en.wikipedia.org/wiki/Battleship_(game)"
+    >
       here
     </a>
     .

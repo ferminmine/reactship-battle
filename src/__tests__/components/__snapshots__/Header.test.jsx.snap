@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Test matches the snapshot 1`] = `
+<div
+  className="Header-headerContainer-0-1-1"
+>
+  <img
+    alt="App Header"
+    className="Header-headerImage-0-1-2"
+    src="/imgs/reactship.png"
+  />
+</div>
+`;

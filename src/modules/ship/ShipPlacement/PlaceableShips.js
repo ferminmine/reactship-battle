@@ -1,4 +1,4 @@
-const AVAILABLE_SHIPS = {
+export const AVAILABLE_SHIPS = {
   submarine: {
     name: 'Submarine',
     size: 2,

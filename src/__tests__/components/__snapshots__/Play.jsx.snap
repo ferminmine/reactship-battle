@@ -1,0 +1,1269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Play Component Test matches the snapshot 1`] = `
+Array [
+  <div
+    className="ParagraphWithTitle-instructionsContainer-0-1-8"
+  >
+    <div
+      className="ParagraphWithTitle-instructionsParagraph-0-1-9"
+    >
+      <div
+        className="ParagraphWithTitle-paragraphTitle-0-1-10"
+      >
+         
+        It's on!
+         
+      </div>
+      Try to sink the enemy ships. To launch your missiles you must click in the spot you want to shoot in the right board. You can watch the enemy shoots in your left board, along with each ship you have placed and their statuses
+    </div>
+  </div>,
+  <div
+    className="Play-boardContainer-0-1-1"
+  >
+    <div
+      className="Play-playerBoardContainer-0-1-2"
+    >
+      <div
+        className="Play-playerName-0-1-3"
+      >
+         
+        
+         
+      </div>
+      <div
+        className="Connect(Board)-boardContainer-0-1-11"
+      >
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined undefined"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </div>
+    </div>
+    <div
+      className="Play-playerBoardContainer-0-1-2 Play-cpuBoardContainer-0-1-4"
+    >
+      <div
+        className="Play-playerName-0-1-3"
+      >
+         CPU 
+      </div>
+      <div
+        className="Connect(Board)-boardContainer-0-1-11"
+      >
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+        <div
+          className="Connect(Board)-land-0-1-12 undefined undefined undefined undefined undefined Connect(Board)-crossHair-0-1-18"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </div>
+    </div>
+  </div>,
+  <div
+    className="Play-turn-0-1-5"
+  />,
+  <div
+    className="Play-centeredButton-0-1-7"
+  >
+    <button
+      className="Play-surrenderButton-0-1-6"
+      onClick={[Function]}
+    >
+       
+      SURRENDER
+       
+    </button>
+  </div>,
+]
+`;
