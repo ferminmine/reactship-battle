@@ -11,4 +11,4 @@ export const setGameState = gameState => ({
 export const setWinner = winner => ({
   type: GAME_ACTION_TYPES.SET_WINNER,
   payload: winner
-})
+});

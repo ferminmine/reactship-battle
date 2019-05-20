@@ -24,7 +24,6 @@ class Play extends React.Component {
   };
 
   componentDidMount = () => {
-    console.log('mounting');
     if (this.props.game.state === GAME_STATES.PLAYER_READY) {
       this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
     } else {
@@ -72,7 +71,7 @@ class Play extends React.Component {
         substractLifePointToShip
       )
     ) {
-      if (this.checkForWinner(playerShips, cpuShips) == 'player') {
+      if (this.checkForWinner(playerShips, cpuShips) === 'player') {
         this.defineWinner('player');
       } else {
         this.props.setGameState(GAME_STATES.CPU_PLAYING);
@@ -86,7 +85,7 @@ class Play extends React.Component {
           removeKnownHit
         );
         this.props.setGameState(GAME_STATES.PLAYER_PLAYING);
-        if (this.checkForWinner(playerShips, cpuShips) == 'CPU') {
+        if (this.checkForWinner(playerShips, cpuShips) === 'CPU') {
           this.defineWinner('CPU');
         }
       }

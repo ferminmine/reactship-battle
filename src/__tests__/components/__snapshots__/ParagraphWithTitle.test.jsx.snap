@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParagraphWithTitle Component Test matches the snapshot 1`] = `
+<div
+  className="ParagraphWithTitle-instructionsContainer-0-1-1"
+>
+  <div
+    className="ParagraphWithTitle-instructionsParagraph-0-1-2"
+  >
+    <div
+      className="ParagraphWithTitle-paragraphTitle-0-1-3"
+    >
+       
+       
+    </div>
+  </div>
+</div>
+`;

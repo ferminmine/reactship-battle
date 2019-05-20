@@ -22,7 +22,7 @@ class Header extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.headerContainer}>
-        <img src="/imgs/reactship.png" className={classes.headerImage} />
+        <img src="/imgs/reactship.png" alt="App Header" className={classes.headerImage} />
       </div>
     );
   };
